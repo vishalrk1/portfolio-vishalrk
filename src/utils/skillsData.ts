@@ -7,7 +7,7 @@ import TSIcon from "../assets/skills/ProgramingLanguage/typescript.svg";
 import CppIcon from "../assets/skills/ProgramingLanguage/icons-c++.svg";
 
 // frontend icons
-import HtmlIcon from "../assets/skills/Frontend/html.svg";
+// import HtmlIcon from "../assets/skills/Frontend/html.svg";
 import CssIcon from "../assets/skills/Frontend/icons8-css.svg";
 import ReactIcon from "../assets/skills/Frontend/react-js.svg";
 import NextIcon from "../assets/skills/Frontend/nextjs.svg";
@@ -48,10 +48,10 @@ export const PrograminLanguagesData = [
 ] as Skill[];
 
 export const FrontendData = [
-  {
-    icon: HtmlIcon,
-    name: "HTML",
-  },
+  // {
+  //   icon: HtmlIcon,
+  //   name: "HTML",
+  // },
   {
     icon: CssIcon,
     name: "CSS",
