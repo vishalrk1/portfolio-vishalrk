@@ -7,13 +7,13 @@ import TSIcon from "../assets/skills/ProgramingLanguage/typescript.svg";
 import CppIcon from "../assets/skills/ProgramingLanguage/icons-c++.svg";
 
 // frontend icons
-// import HtmlIcon from "../assets/skills/Frontend/html.svg";
-import CssIcon from "../assets/skills/Frontend/icons8-css.svg";
-import ReactIcon from "../assets/skills/Frontend/react-js.svg";
-import NextIcon from "../assets/skills/Frontend/nextjs.svg";
-import ReduxIcon from "../assets/skills/Frontend/redux.svg";
-import ReactNativeIcon from "../assets/skills/Frontend/react-native-64.png";
-import TailwindIcon from "../assets/skills/Frontend/tailwind-css.svg";
+import HtmlIcon from "../assets/skills/frontend/html.svg";
+import CssIcon from "../assets/skills/frontend/icons8-css.svg";
+import ReactIcon from "../assets/skills/frontend/react-js.svg";
+import NextIcon from "../assets/skills/frontend/nextjs.svg";
+import ReduxIcon from "../assets/skills/frontend/redux.svg";
+import ReactNativeIcon from "../assets/skills/frontend/react-native-64.png";
+import TailwindIcon from "../assets/skills/frontend/tailwind-css.svg";
 
 // AI Ds icons
 import HuggingfaceIcon from "../assets/skills/AI-DS/hf-logo.svg";
@@ -24,9 +24,9 @@ import NumpyIcon from "../assets/skills/AI-DS/numpy.svg";
 import Chain from "../assets/skills/AI-DS/chain-48.png";
 
 // backend icons
-import DjangoIcon from "../assets/skills/Backend/django.svg";
-import FirebaseIcon from "../assets/skills/Backend/firebase.svg";
-import FlaskIcon from "../assets/skills/Backend/flask.svg";
+import DjangoIcon from "../assets/skills/backend/django.svg";
+import FirebaseIcon from "../assets/skills/backend/firebase.svg";
+import FlaskIcon from "../assets/skills/backend/flask.svg";
 
 export const PrograminLanguagesData = [
   {
@@ -48,10 +48,10 @@ export const PrograminLanguagesData = [
 ] as Skill[];
 
 export const FrontendData = [
-  // {
-  //   icon: HtmlIcon,
-  //   name: "HTML",
-  // },
+  {
+    icon: HtmlIcon,
+    name: "HTML",
+  },
   {
     icon: CssIcon,
     name: "CSS",
