@@ -1,6 +1,7 @@
 import { Calendar } from "lucide-react";
 import { Experience } from "../utils/types";
 import React from "react";
+import dayjs from "dayjs";
 
 interface ExperienceSectionProps {
   experience: Experience;
@@ -9,6 +10,11 @@ interface ExperienceSectionProps {
 const ExperienceSection: React.FC<ExperienceSectionProps> = ({
   experience,
 }) => {
+  const endDate = experience.isCurrent ? dayjs() : dayjs(experience.endDate);
+  const totalMonths = experience.isCurrent
+    ? endDate.diff(experience.startDate, "months")
+    : endDate.diff(experience.startDate, "months");
+
   return (
     <div className="flex flex-row gap-4 relative py-4">
       <div className="z-10">
@@ -17,8 +23,12 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
         </div>
       </div>
       <div className="flex flex-col w-full h-max">
-        <p className="mt-2 text-CustomYellow text-xl font-semibold">{experience.position}</p>
-        <p className="mt-2 text-base font-normal">{experience.company} - {`months`}</p>
+        <p className="mt-2 text-CustomYellow text-xl font-semibold">
+          {experience.position}
+        </p>
+        <p className="mt-2 text-base font-normal">
+          {experience.company} - {`${totalMonths} months`}
+        </p>
         <ul className="list-disc mx-4 my-3 space-y-3">
           {experience.description.map((txt) => (
             <li className="font-light text-xs md:text-base">{txt}</li>

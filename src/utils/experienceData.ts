@@ -9,6 +9,8 @@ export const ExperienceData = [
       "We are using different version of Meta's LLAMA 2 model for this chatbot. i have built an API with LLAMA 2, retrival QA pipeline of langchain and django to include this chatbot in our webapp.",
       "Furthermore, I actively contribute to the Frontend team of Jio Cloud Gaming, a platform built with Next.js., i have mainly worked on fixing bugs on website.",
     ],
+    isCurrent: true,
+    startDate: "6-12-2023",
   },
   {
     company: "HDFC Life",
@@ -18,5 +20,8 @@ export const ExperienceData = [
       "Developed an anti-face spoofing detection model to improve and prevent attacks on the face recognition system",
       "Worked in all project phases in Agile/Scrum methodology with Jira",
     ],
+    isCurrent: false,
+    startDate: "6-9-2022",
+    endDate: "1-9-2023",
   },
 ] as Experience[];

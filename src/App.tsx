@@ -102,8 +102,8 @@ function App() {
             </div>
           </Box>
         </div>
-        <main className="h-full flex-2 overflow-y-auto py-2">
-          <Box className="mr-3">
+        <main className="h-full flex-2 overflow-y-auto md:py-2">
+          <Box className="mr-0 md:mr-3">
             <Homepage
               aboutRef={aboutRef}
               skillRef={skillsRef}

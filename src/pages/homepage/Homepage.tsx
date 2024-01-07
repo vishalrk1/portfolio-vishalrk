@@ -41,9 +41,9 @@ const Homepage: React.FC<HomepageProps> = ({
         Work Experience
       </h1>
       <div className="flex flex-col w-full mt-6 p-6 px-2 md:px-24">
-        {ExperienceData.map((item, index) => (
-          <ExperienceSection experience={item} key={index} />
-        ))}
+        {ExperienceData.map((item, index) => {
+          return <ExperienceSection experience={item} key={index} />;
+        })}
       </div>
     </div>
   );

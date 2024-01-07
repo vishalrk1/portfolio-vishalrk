@@ -19,8 +19,9 @@ export interface Experience {
   company: string;
   position: string;
   startDate: string;
-  endate: string;
+  endDate?: string;
   description: string[];
+  isCurrent: boolean;
 }
 
 export interface Image {
