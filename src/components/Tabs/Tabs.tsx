@@ -23,8 +23,8 @@ const Tabs: React.FC<TabsProps> = ({ children }) => {
             key={child.props.label}
             className={`${
               activeTab === child.props.label
-                ? "border-b-2 border-CustomYellow text-CustomYellow md:font-bold text-sm md:text-base"
-                : ""
+                ? "border-b-2 border-CustomYellow text-CustomYellow font-bold text-sm md:text-base"
+                : "text-sm md:text-base"
             } flex-1 text-CustomGrey py-2`}
             onClick={(e) => handleClick(e, child.props.label)}
           >
