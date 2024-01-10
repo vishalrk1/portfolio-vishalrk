@@ -17,7 +17,7 @@ const ProjectsTab = () => {
         </div>
       </Tab>
       <Tab label="All">
-        <div className="flex flex-row gap-5 justify-center md:justify-center flex-wrap w-full p-4">
+        <div className="flex flex-row gap-5 justify-center md:justify-center flex-wrap w-full p-0">
           {ProjectsData.map((item, index) => (
             <ProjectCard projectItem={item} key={index} />
           ))}
