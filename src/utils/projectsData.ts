@@ -181,7 +181,7 @@ export const ProjectsData = [
       "Developed a fully responsive Jewellery Store website using Reactjs, Tailwind css, context API and Django for backend. showcasing a wide range of jewellery products with user-friendly navigation and interactive features.",
     liveLink: "",
     githubLink: "https://github.com/vishalrk1/Ecomm",
-    isFeatured: true,
+    isFeatured: false,
     images: [
       {
         url: "https://raw.githubusercontent.com/vishalrk1/Ecomm/main/screenshots/Homescreen%20-%20Logged%20In.png",
