@@ -131,7 +131,7 @@ export const ProjectsData = [
     liveLink: "",
     githubLink:
       "https://github.com/vishalrk1/Ecommerce-website-react/tree/master",
-    isFeatured: false,
+    isFeatured: true,
     images: [
       {
         url: "https://raw.githubusercontent.com/vishalrk1/Ecommerce-website-react/master/demo-images/img-1.png",

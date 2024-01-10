@@ -13,6 +13,7 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const experienceRef = useRef(null);
+
   const [routesData, setRoutesData] = useState<Route[]>([
     {
       icon: <User size={24} />,
