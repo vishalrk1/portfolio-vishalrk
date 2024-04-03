@@ -1,6 +1,5 @@
-import { useState } from "react";
+
 import { Image } from "../../utils/types";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 import { Swiper, SwiperSlide } from "swiper/react";
