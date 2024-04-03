@@ -1,21 +1,34 @@
 import React from "react";
-import ImageCarousel from "./imageCarousel";
+import ImageCarousel from "./ImageCarousel/imageCarousel";
 import { Project } from "../utils/types";
 import { Github } from "lucide-react";
 
 interface ProjectCardProps {
   projectItem: Project;
+  imagesAutoPlay: boolean;
+  onClick: () => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ projectItem }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  projectItem,
+  onClick,
+  imagesAutoPlay,
+}) => {
   const openInNewTab = (url: string) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
   };
 
   return (
-    <div className="flex flex-col w-full md:w-[350px] h-max rounded-md bg-gray-700 p-2">
-      <ImageCarousel images={projectItem.images} />
+    <div
+      onClick={onClick}
+      className="flex flex-col w-full md:w-[350px] h-max rounded-md bg-gray-700 p-2"
+    >
+      <ImageCarousel
+        images={projectItem.images}
+        className="h-[100px] md:h-[200px]"
+        autoplay={imagesAutoPlay}
+      />
       <div className="flex flex-row justify-between">
         <p className="flex-1 text-left text-CustomGrey font-semibold text-lg m-2 mb-0">
           {projectItem.name}

@@ -8,11 +8,12 @@ export interface Skill {
 export interface Project {
   name: string;
   description: string;
-  images: Image[];
   liveLink: string;
   githubLink: string;
-  skills: Skill[];
   isFeatured: boolean;
+  images: Image[];
+  skills: Skill[];
+  projectFeatures: String[];
 }
 
 export interface Experience {

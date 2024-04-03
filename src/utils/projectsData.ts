@@ -1,49 +1,71 @@
-import { Image, Project } from "./types";
+import {
+  AI_DSData,
+  BackendData,
+  FrontendData,
+  PrograminLanguagesData,
+} from "./skillsData";
+import { Image, Project, Skill } from "./types";
 
 export const ProjectsData = [
   {
-    name: "See Food 🍔",
+    name: "SeeFood 🍔",
     description:
       "SeeFood is an website with image classification model which classifies uploaded food image and then displaces similara dishes, theri recipies and caloric breackdowns.",
-    githubLink: "https://github.com/vishalrk1/SeeFood-Website",
+    githubLink: "https://github.com/vishalrk1/seefood-ai",
     isFeatured: true,
-    liveLink: "https://huggingface.co/spaces/Vrk/SeeFood",
+    liveLink: "https://seefoodai.netlify.app/",
     images: [
       {
-        url: "https://raw.githubusercontent.com/vishalrk1/SeeFood-Website/master/screenshots/img-1.png",
+        url: "https://raw.githubusercontent.com/vishalrk1/seefood-ai/combined/screenshot/img-1.png",
         alt: "project-seeFood",
       },
       {
-        url: "https://raw.githubusercontent.com/vishalrk1/SeeFood-Website/master/screenshots/img-2.png",
+        url: "https://raw.githubusercontent.com/vishalrk1/seefood-ai/combined/screenshot/img-4.png",
         alt: "project-seeFood",
       },
       {
-        url: "https://raw.githubusercontent.com/vishalrk1/SeeFood-Website/master/screenshots/img-3.png",
+        url: "https://raw.githubusercontent.com/vishalrk1/seefood-ai/combined/screenshot/img-5.png",
         alt: "project-seeFood",
       },
       {
-        url: "https://raw.githubusercontent.com/vishalrk1/SeeFood-Website/master/screenshots/img-4.png",
+        url: "https://raw.githubusercontent.com/vishalrk1/seefood-ai/combined/screenshot/img-6.png",
         alt: "project-seeFood",
       },
       {
-        url: "https://raw.githubusercontent.com/vishalrk1/SeeFood-Website/master/screenshots/img-5.png",
+        url: "https://raw.githubusercontent.com/vishalrk1/seefood-ai/combined/screenshot/img-7.png",
         alt: "project-seeFood",
       },
       {
-        url: "https://raw.githubusercontent.com/vishalrk1/SeeFood-Website/master/screenshots/img-6.png",
+        url: "https://raw.githubusercontent.com/vishalrk1/seefood-ai/combined/screenshot/img-2.png",
         alt: "project-seeFood",
       },
       {
-        url: "https://raw.githubusercontent.com/vishalrk1/SeeFood-Website/master/screenshots/img-7.png",
+        url: "https://raw.githubusercontent.com/vishalrk1/seefood-ai/combined/screenshot/img-3.png",
         alt: "project-seeFood",
       },
     ] as Image[],
+    skills: [
+      PrograminLanguagesData[0],
+      FrontendData[2],
+      AI_DSData[0],
+      AI_DSData[1],
+      AI_DSData[2],
+      BackendData[0],
+      BackendData[1],
+      BackendData[3],
+    ] as Skill[],
+    projectFeatures: [
+      'Image Classification',
+      'Image Upload',
+      'Food Recipies',
+      'Caloric Breakdown',
+    ] as String[]
   },
   {
     name: "MegaLinks Website",
     description:
       "Developed Megalinks website using Next JS, Tailwind CSS, and TypeScript, with state management powered by Redux, for accessing free video editing resources like Scenepacks and tutorials",
-    liveLink: "https://megalinks-website-nextjs.vercel.app/",
+    liveLink: "https://megalinks.vercel.app/",
     githubLink:
       "https://github.com/vishalrk1/megalinks-website-nextjs/tree/main",
     isFeatured: true,
@@ -77,6 +99,26 @@ export const ProjectsData = [
         alt: "first-panel-ss",
       },
     ] as Image[],
+    skills: [
+      PrograminLanguagesData[1],
+      PrograminLanguagesData[2],
+      FrontendData[0],
+      FrontendData[2],
+      FrontendData[3],
+      FrontendData[4],
+      FrontendData[6],
+      BackendData[2],
+    ] as Skill[],
+    projectFeatures: [
+      'Free Video Editing Resources',
+      'Scenepacks',
+      'Tutorials',
+      'User-friendly Interface',
+      'State Management with Redux',
+      'Responsive Design',
+      'Dark Mode',
+      'Authentication',
+    ] as String[]
   },
   {
     name: "MegaLinks Admin Portal",
@@ -84,7 +126,7 @@ export const ProjectsData = [
       "Developed Megalinks website and admin panel using Next JS, Tailwind CSS, and TypeScript, with state management powered by Redux, ensuring a cohesive user experience and efficient data handling across platforms",
     liveLink: "",
     githubLink: "https://github.com/vishalrk1/megalinks-admin-portal",
-    isFeatured: true,
+    isFeatured: false,
     images: [
       {
         url: "https://raw.githubusercontent.com/vishalrk1/megalinks-admin-portal/main/screenshots/img-1.png",
@@ -123,6 +165,29 @@ export const ProjectsData = [
         alt: "first-panel-ss",
       },
     ] as Image[],
+    skills: [
+      PrograminLanguagesData[1],
+      PrograminLanguagesData[2],
+      FrontendData[0],
+      FrontendData[2],
+      FrontendData[3],
+      FrontendData[4],
+      FrontendData[6],
+      BackendData[2],
+    ] as Skill[],
+    projectFeatures: [
+      'User-friendly Interface',
+      'State Management with Redux',
+      'Responsive Design',
+      'Dark Mode',
+      'Authentication',
+      'Data Authorization',
+      'Data Tables',
+      'Data Management',
+      'Data Filtering',
+      'Data Sorting',
+      'Data Pagination',
+    ] as String[]
   },
   {
     name: "Eccomerce Website",
@@ -174,14 +239,35 @@ export const ProjectsData = [
         alt: "second-project-2",
       },
     ] as Image[],
+    skills: [
+      PrograminLanguagesData[1],
+      FrontendData[0],
+      FrontendData[1],
+      FrontendData[2],
+      FrontendData[3],
+      FrontendData[4],
+      FrontendData[6],
+      BackendData[2],
+    ] as Skill[],
+    projectFeatures: [
+      'Fully Responsive',
+      'User-friendly Navigation',
+      'Interactive Features',
+      'Shopping Cart',
+      'Checkout',
+      'Payment Processing',
+      'User Authentication',
+      'User Profile',
+      'User Wishlist',
+    ] as String[]
   },
   {
     name: "Jewellery Store Website",
     description:
       "Developed a fully responsive Jewellery Store website using Reactjs, Tailwind css, context API and Django for backend. showcasing a wide range of jewellery products with user-friendly navigation and interactive features.",
-    liveLink: "",
+    liveLink: "https://luxeselect.vercel.app/",
     githubLink: "https://github.com/vishalrk1/Ecomm",
-    isFeatured: false,
+    isFeatured: true,
     images: [
       {
         url: "https://raw.githubusercontent.com/vishalrk1/Ecomm/main/screenshots/Homescreen%20-%20Logged%20In.png",
@@ -204,6 +290,36 @@ export const ProjectsData = [
         alt: "project-3",
       },
     ] as Image[],
+    skills: [
+      PrograminLanguagesData[1],
+      FrontendData[0],
+      FrontendData[2],
+      FrontendData[3],
+      FrontendData[4],
+      FrontendData[6],
+      BackendData[0],
+      BackendData[3],
+    ] as Skill[],
+    projectFeatures: [
+      'Fully Responsive',
+      'User-friendly Navigation',
+      'Interactive Features',
+      'Product Filtering',
+      'Product Sorting',
+      'Product Pagination',
+      'Shopping Cart',
+      'Checkout',
+      'Payment Processing',
+      'Order Tracking',
+      'User Authentication',
+      'User Profile',
+      'User Orders',
+      'User Wishlist',
+      'Admin Dashboard',
+      'Product Management',
+      'Order Management',
+      'User Management',
+    ] as String[]
   },
   {
     name: "Skimlit",
@@ -218,5 +334,15 @@ export const ProjectsData = [
         alt: "skimlit-image-alt",
       },
     ] as Image[],
+    skills: [
+      PrograminLanguagesData[0],
+      ...AI_DSData
+    ] as Skill[],
+    projectFeatures: [
+      'NLP Model',
+      'Abstract Classification',
+      'Literature Skimming',
+      'Research Efficiency',
+    ] as String[]
   },
 ] as Project[];

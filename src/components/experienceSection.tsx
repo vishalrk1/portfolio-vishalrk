@@ -26,10 +26,10 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
         <p className="mt-2 text-CustomYellow text-xl font-semibold">
           {experience.position}
         </p>
-        <p className="flex items-center mt-2 text-base font-normal">
+        <p className="flex items-center mt-2 sm:text-base text-sm font-normal">
           {experience.company} - {`${totalMonths} months - `}{" "}
           {experience.isCurrent && (
-            <p className="ml-1 text-base font-bold text-green-500">Current</p>
+            <p className="ml-1 sm:text-base text-sm font-bold text-green-500">Current</p>
           )}
         </p>
         <ul className="list-disc mx-4 my-3 space-y-3">

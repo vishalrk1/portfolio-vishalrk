@@ -45,6 +45,12 @@ const Homepage: React.FC<HomepageProps> = ({
           return <ExperienceSection experience={item} key={index} />;
         })}
       </div>
+      {/* <h1
+        ref={experienceRef}
+        className="text-left text-4xl font-bold opacity-60 text-CustomGrey py-4"
+      >
+        Contact Me
+      </h1> */}
     </div>
   );
 };
